@@ -36,4 +36,5 @@ public class PlayerConfigurator : MonoBehaviour
     {
         m_HatLoadOpHandle.Completed -= OnHatLoadComplete;
     }
+
 }
