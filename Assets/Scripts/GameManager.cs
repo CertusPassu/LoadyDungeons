@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,7 +15,12 @@ public class GameManager : MonoBehaviour
     // The value of -1 means no hats have been purchased
     public static int s_ActiveHat = 0;
 
-    [SerializeField] private Image m_gameLogoImage;
+    [SerializeField] 
+    private Image m_gameLogoImage;
+    [SerializeField]
+    private string m_LogoAddress;
+
+    private AsyncOperationHandle<Sprite> m_LogoLoadOpHandle;
 
     public void Awake()
     {
@@ -32,13 +39,17 @@ public class GameManager : MonoBehaviour
         // When we go to the 
         s_CurrentLevel = 0;
 
-        var logoResourceRequest = Resources.LoadAsync<Sprite>("LoadyDungeonsLogo");
-        logoResourceRequest.completed += (asyncOperation) =>
-        {
-            m_gameLogoImage.sprite = logoResourceRequest.asset as Sprite;
-        };
-    }
+        m_LogoLoadOpHandle = Addressables.LoadAssetAsync<Sprite>(m_LogoAddress);
 
+        m_LogoLoadOpHandle.Completed += OnLogoLoadComplete;
+    }
+    private void OnLogoLoadComplete(AsyncOperationHandle<Sprite> asyncOperationHandle)
+    {
+        if (asyncOperationHandle.Status == AsyncOperationStatus.Succeeded)
+        {
+            m_gameLogoImage.sprite = asyncOperationHandle.Result;
+        }
+    }
     public void ExitGame()
     {
         s_CurrentLevel = 0;
