@@ -1,0 +1,2 @@
+# LoadyDungeons
+ Addressables integration
