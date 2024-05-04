@@ -131,7 +131,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_HatAnchor: {fileID: 1946178409}
-  m_Address: Hat01
+  m_HatAssetReference:
+    m_AssetGUID: 173ee4c7d80755d47aa3339f970e8ade
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 1
 --- !u!114 &8083381679980500539
 MonoBehaviour:
   m_ObjectHideFlags: 0
