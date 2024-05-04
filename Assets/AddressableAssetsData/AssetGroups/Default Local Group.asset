@@ -17,11 +17,6 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 1fa570f60b7a49a428835de72e80d084
   m_SerializeEntries:
-  - m_GUID: a1e01d398699cc940a960600837600bd
-    m_Address: LoadingScene
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b53baa10142cbb346a47ab071d32889a
     m_Address: Hat_BunnyEars
     m_ReadOnly: 0
