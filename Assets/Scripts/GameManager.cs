@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] 
     private Image m_gameLogoImage;
     [SerializeField]
-    private AssetReference m_LogoAssetReference;
+    private AssetReferenceSprite m_LogoAssetReference;
 
     private AsyncOperationHandle<Sprite> m_LogoLoadOpHandle;
 
