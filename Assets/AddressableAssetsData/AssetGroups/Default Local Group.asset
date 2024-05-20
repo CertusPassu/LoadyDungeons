@@ -17,36 +17,6 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 1fa570f60b7a49a428835de72e80d084
   m_SerializeEntries:
-  - m_GUID: b53baa10142cbb346a47ab071d32889a
-    m_Address: Hat_BunnyEars
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: dc8eb9039a6936749b8aad319953ab89
-    m_Address: Hat04
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6c93cb6413eaf5f46bbe190dbbad2651
-    m_Address: Hat02
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 173ee4c7d80755d47aa3339f970e8ade
-    m_Address: Hat05
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6e65281e8a345ff4ea1b73f2a1578a6d
-    m_Address: Hat01
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 434c1413ad6a76842a3a98e6a21aefa5
-    m_Address: Hat03
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: c3a9b5d611a35464a8e473e4249a1df9
     m_Address: LoadyDungeonsLogo
     m_ReadOnly: 0
